@@ -1,10 +1,13 @@
-FROM node:14-alpine AS development
-ENV NODE_ENV development
+FROM node:20-alpine AS development
+ENV NODE_ENV=development
+#Install git with other dependencies
+RUN apk add --no-cache git
 # Add a work directory
 WORKDIR /app
 # Cache and Install dependencies
 COPY package.json .
-RUN npm install
+RUN npm cache clean --force && \
+    npm install --legacy-peer-deps --no-audit --no-fund
 # Copy app files
 COPY . .
 # Expose port
