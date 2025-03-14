@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/*.js' --reporter mocha-junit-reporter"
+    "test": "mocha 'test/*.js' --reporter mocha-junit-reporter",
+    "start": "node app.js"
 },
   "keywords": [],
   "author": "",
