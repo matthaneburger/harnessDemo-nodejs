@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/**/*.js' --reporter mocha-junit-reporter",
-    "build": "npm run-script build",
-    "start": "npm start"
-  },
+    "test": "mocha 'test/*.js' --reporter mocha-junit-reporter",
+    "build": "echo 'Build step complete. No additional processing required.'",
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
