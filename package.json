@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/*.js' --reporter mocha-junit-reporter",
-    "build": "echo 'Build step complete. No additional processing required.'",
+    "test": "mocha 'test/*.js' --reporter mocha-junit-reporter"
 },
   "keywords": [],
   "author": "",
